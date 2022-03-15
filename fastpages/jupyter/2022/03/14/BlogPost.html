@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      22 min read
+      20 min read
     
 </span></p>
 
@@ -165,11 +165,9 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#DISCUSSION">DISCUSSION </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#Analytical-Process">Analytical Process </a></li>
 <li class="toc-entry toc-h3"><a href="#Range-and-Variety-of-Shades">Range and Variety of Shades </a></li>
 <li class="toc-entry toc-h3"><a href="#Numerical-Labeling-System">Numerical Labeling System </a></li>
 <li class="toc-entry toc-h3"><a href="#Variability-of-Word-Choice">Variability of Word Choice </a></li>
-<li class="toc-entry toc-h3"><a href="#Moving-Forward">Moving Forward </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#References">References </a></li>
@@ -3414,25 +3412,6 @@ Length: 128, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Analytical-Process">
-<a class="anchor" href="#Analytical-Process" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analytical Process<a class="anchor-link" href="#Analytical-Process"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>While analyzing the datasets, I went through a few direction changes. Initially, I chose the point of distinction between lighter and darker shades as 0.5 simply because it was the middle number in the lightness range that spans from 0 to 1. However, I realized that there were no foundation shades that were 0 and 1 as they are black and white, respectively. Thus, I chose to use the mean of the lightness values of the shades that are included in the dataset as the point of distinction. I also thought about using a median, but median is not good at capturing outliers relative to mean, and the two measures were not much different from each other.</p>
-<p>I also made a visualization which showed the mean shade of each brand with the hopes that the average will give insights into how inclusive the brands are in terms of shade range. However, I came to the conclusion that it would be better to explicitly calculate the range of shades by subtracting the lowest shade from the highest shade from that specific brand instead of using average values.</p>
-<p>Additionally, the correlation between 'lightness' and 'number' of -.26 initially made me think that the relationship is not strong enough to conclude there is a definite trend in which lighter shades are always labeled first. However, I realized that not all products start their numerical labels with 0. For example, there are products that start their numerical labeling system with 100. This made me think that calculating the correlation wouldn't be the best way to identify the relationship between lightness and numbers.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Range-and-Variety-of-Shades">
 <a class="anchor" href="#Range-and-Variety-of-Shades" aria-hidden="true"><span class="octicon octicon-link"></span></a>Range and Variety of Shades<a class="anchor-link" href="#Range-and-Variety-of-Shades"> </a>
 </h3>
@@ -3494,23 +3473,6 @@ Length: 128, dtype: int64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In all, the data showed that even though the most available and accessible foundation shades are lighter shades, there are a lot of available options for darker shades as well. In terms of the variability of word choice in labeling shades, however, data suggests that the language is quite limited when it comes to labeling darker shades relative to lighter shades. The results indicate that there is a lack of creativity and variability for darker shade labels. Additionally, lighter shades are labeled with words that have positive connotation noticeably more than the darker shades. The pattern in the numerical labeling system shows how frequently brands organize their shades from light to dark instead of dark to light. These results suggest that the current selection of foundations in the US market seems to have improved in terms of shade range but definitely has room for improvement regarding the language used to label the shades as well as the numerical labeling system.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Moving-Forward">
-<a class="anchor" href="#Moving-Forward" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moving Forward<a class="anchor-link" href="#Moving-Forward"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I hope that this project provided a bit of statistical insight into the bias that still exists within foundation shades and wish that it contributes to the process of bringing awareness to people regarding this issue. As mentioned in the beginning of this project, Tarte previously received angry backlash from their customers for their shade range. However, the dataset used for this project was created in 2021, and the numbers show that Tarte is now one of the brands that has the widest selection of shades. As such, many brands have acknowledged their shortcomings with their limited shade range and have improved upon their make up products. Moving forward, I hope to see make up brands and companies expanding their ways of labeling darker shades and become more creative instead of relying on their go-to categories such as metal and drink-related terms.</p>
 
 </div>
 </div>
